@@ -122,7 +122,7 @@ export default (styles) => ({
         else {
           bullet = createElement(Text, { key: state.key, style: styles.listItemBullet }, styles.listItemBulletType ? `${styles.listItemBulletType} ` : '\u2022 ')
         }
-        const listItemText = createElement(Text, { key: state.key + 1, style: styles.listItemText }, output(item, state))
+        const listItemText = createElement(View, { key: state.key + 1, style: styles.listItemText }, output(item, state))
         return createElement(View, {
           key: i,
           style: styles.listItem
